@@ -137,7 +137,7 @@ ggplot(data1, aes(Salary)) + geom_histogram()
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](unnamed-chunk-2-1.png)
 
 ```r
 data1$Salary <- log(data1$Salary)
@@ -172,10 +172,10 @@ summary(model1)
 ggplot(data1, aes(Hits, Salary)) + geom_point(size=4, alpha=0.5) + geom_smooth(method='loess',span=0.2) + geom_smooth(method='lm')
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-2.png)
+![plot of chunk unnamed-chunk-2](unnamed-chunk-2-2.png)
 
 ```r
 ggplot(data1, aes(factor(Years), Salary)) + geom_boxplot() + geom_vline(xintercept = 4.5, color='brown', size=1.2, alpha=0.5)
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-3.png)
+![plot of chunk unnamed-chunk-2](unnamed-chunk-2-3.png)
